@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="gS2-cI-yeA" customClass="YCDatePicker">
+            <rect key="frame" x="0.0" y="0.0" width="246" height="217"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Rld-nf-YaV">
+                    <rect key="frame" x="0.0" y="47" width="246" height="162"/>
+                    <date key="date" timeIntervalSinceReferenceDate="464263747.66518301">
+                        <!--2015-09-18 10:09:07 +0000-->
+                    </date>
+                    <connections>
+                        <action selector="oneDatePickerValueChanged:" destination="gS2-cI-yeA" eventType="valueChanged" id="KiH-GS-3BA"/>
+                    </connections>
+                </datePicker>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dae-aD-KDv">
+                    <rect key="frame" x="12" y="10" width="48.5" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="s5S-mz-z8a"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XyM-Qr-MGN">
+                    <rect key="frame" x="210" y="14" width="22" height="22"/>
+                    <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelBtnClick:" destination="gS2-cI-yeA" eventType="touchUpInside" id="dGS-Ka-s9u"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Rld-nf-YaV" secondAttribute="trailing" id="G4c-GM-sgE"/>
+                <constraint firstAttribute="trailing" secondItem="dae-aD-KDv" secondAttribute="trailing" constant="10" id="GNB-Na-KKJ"/>
+                <constraint firstAttribute="bottom" secondItem="Rld-nf-YaV" secondAttribute="bottom" id="Mgb-jZ-ZHS"/>
+                <constraint firstAttribute="trailing" secondItem="XyM-Qr-MGN" secondAttribute="trailing" constant="14" id="WnZ-Zi-0y6"/>
+                <constraint firstItem="Rld-nf-YaV" firstAttribute="top" secondItem="dae-aD-KDv" secondAttribute="bottom" id="amQ-x2-0Kg"/>
+                <constraint firstItem="XyM-Qr-MGN" firstAttribute="centerY" secondItem="dae-aD-KDv" secondAttribute="centerY" id="fNI-Sa-Otr"/>
+                <constraint firstItem="dae-aD-KDv" firstAttribute="top" secondItem="gS2-cI-yeA" secondAttribute="top" constant="10" id="nNt-Zw-kg1"/>
+                <constraint firstItem="dae-aD-KDv" firstAttribute="leading" secondItem="gS2-cI-yeA" secondAttribute="leading" constant="12" id="raP-G3-BRZ"/>
+                <constraint firstItem="Rld-nf-YaV" firstAttribute="leading" secondItem="gS2-cI-yeA" secondAttribute="leading" id="wtE-Db-07S"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="GNB-Na-KKJ"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="cancelBtn" destination="XyM-Qr-MGN" id="Zgo-oo-3G4"/>
+                <outlet property="dataPicker" destination="Rld-nf-YaV" id="ej6-3Y-bfh"/>
+                <outlet property="dateTitle" destination="dae-aD-KDv" id="RS1-Ky-GIT"/>
+            </connections>
+            <point key="canvasLocation" x="315" y="181.5"/>
+        </view>
+    </objects>
+</document>

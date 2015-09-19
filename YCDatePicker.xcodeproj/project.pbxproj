@@ -14,6 +14,9 @@
 		17715CEA1BAD5505004E2C59 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17715CE91BAD5505004E2C59 /* Images.xcassets */; };
 		17715CED1BAD5505004E2C59 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17715CEB1BAD5505004E2C59 /* LaunchScreen.xib */; };
 		17715CF91BAD5505004E2C59 /* YCDatePickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17715CF81BAD5505004E2C59 /* YCDatePickerTests.m */; };
+		17715D051BAD5A2A004E2C59 /* YCDatePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17715D041BAD5A2A004E2C59 /* YCDatePicker.xib */; };
+		17715D081BAD5A4A004E2C59 /* YCDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 17715D071BAD5A4A004E2C59 /* YCDatePicker.m */; };
+		17715D0C1BAD5B09004E2C59 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 17715D0B1BAD5B09004E2C59 /* UIView+Frame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,11 @@
 		17715CF21BAD5505004E2C59 /* YCDatePickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YCDatePickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17715CF71BAD5505004E2C59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17715CF81BAD5505004E2C59 /* YCDatePickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCDatePickerTests.m; sourceTree = "<group>"; };
+		17715D041BAD5A2A004E2C59 /* YCDatePicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YCDatePicker.xib; sourceTree = "<group>"; };
+		17715D061BAD5A4A004E2C59 /* YCDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCDatePicker.h; sourceTree = "<group>"; };
+		17715D071BAD5A4A004E2C59 /* YCDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCDatePicker.m; sourceTree = "<group>"; };
+		17715D0A1BAD5B09004E2C59 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		17715D0B1BAD5B09004E2C59 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +95,9 @@
 				17715CE41BAD5505004E2C59 /* ViewController.m */,
 				17715CE61BAD5505004E2C59 /* Main.storyboard */,
 				17715CE91BAD5505004E2C59 /* Images.xcassets */,
+				17715D031BAD59B6004E2C59 /* YCDatePicker */,
 				17715CEB1BAD5505004E2C59 /* LaunchScreen.xib */,
+				17715D021BAD595A004E2C59 /* Common */,
 				17715CDC1BAD5505004E2C59 /* Supporting Files */,
 			);
 			path = YCDatePicker;
@@ -117,6 +127,33 @@
 				17715CF71BAD5505004E2C59 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		17715D021BAD595A004E2C59 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				17715D091BAD5B09004E2C59 /* UIView+Frame */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		17715D031BAD59B6004E2C59 /* YCDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				17715D041BAD5A2A004E2C59 /* YCDatePicker.xib */,
+				17715D061BAD5A4A004E2C59 /* YCDatePicker.h */,
+				17715D071BAD5A4A004E2C59 /* YCDatePicker.m */,
+			);
+			path = YCDatePicker;
+			sourceTree = "<group>";
+		};
+		17715D091BAD5B09004E2C59 /* UIView+Frame */ = {
+			isa = PBXGroup;
+			children = (
+				17715D0A1BAD5B09004E2C59 /* UIView+Frame.h */,
+				17715D0B1BAD5B09004E2C59 /* UIView+Frame.m */,
+			);
+			path = "UIView+Frame";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17715CE81BAD5505004E2C59 /* Main.storyboard in Resources */,
+				17715D051BAD5A2A004E2C59 /* YCDatePicker.xib in Resources */,
 				17715CED1BAD5505004E2C59 /* LaunchScreen.xib in Resources */,
 				17715CEA1BAD5505004E2C59 /* Images.xcassets in Resources */,
 			);
@@ -220,7 +258,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				17715CE51BAD5505004E2C59 /* ViewController.m in Sources */,
+				17715D081BAD5A4A004E2C59 /* YCDatePicker.m in Sources */,
 				17715CE21BAD5505004E2C59 /* AppDelegate.m in Sources */,
+				17715D0C1BAD5B09004E2C59 /* UIView+Frame.m in Sources */,
 				17715CDF1BAD5505004E2C59 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +456,7 @@
 				17715CFE1BAD5505004E2C59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17715CFF1BAD5505004E2C59 /* Build configuration list for PBXNativeTarget "YCDatePickerTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +465,7 @@
 				17715D011BAD5505004E2C59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
