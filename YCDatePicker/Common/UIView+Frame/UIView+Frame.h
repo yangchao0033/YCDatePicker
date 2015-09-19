@@ -1,8 +1,8 @@
 //
 //  UIView+Frame.h
-//  传智微博
 //
-//  Created by 李南江 on 15/3/1.
+//
+//  Created by 杨超 on 15/3/1.
 //  Copyright (c) 2015年 itcast. All rights reserved.
 //
 
