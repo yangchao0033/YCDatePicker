@@ -172,11 +172,5 @@
     NSString *dateToLable = [selectDateFormatter1 stringFromDate:self.dataPicker.date];
     self.dateTitle.text = dateToLable;
 }
-//- (NSString *)LabelFormatString
-//{
-//    if (_LabelFormatString == nil) {
-//        _LabelFormatString = @"a hh:mm";
-//    }
-//    return _LabelFormatString;
-//}
+
 @end
