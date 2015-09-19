@@ -161,8 +161,8 @@
 
 - (void)setLabelFormatString:(NSString *)LabelFormatString
 {
-    if (_LabelFormatString == nil) {
-        _LabelFormatString = @"a hh:mm";
+    if (LabelFormatString == nil) {
+        _LabelFormatString = [@"a hh:mm" copy];
     } else {
         _LabelFormatString = [LabelFormatString copy];
     }
